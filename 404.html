@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Glanz &amp; Klar Service</title>
+    <script>
+      // GitHub Pages SPA redirect trick
+      // Saves the full path to sessionStorage, then redirects to the base URL.
+      // The index.html picks it up and restores the route via history.replaceState.
+      var base = '/GlanzundKlar';
+      var path = window.location.pathname.replace(base, '') || '/';
+      var search = window.location.search;
+      var hash = window.location.hash;
+      sessionStorage.setItem('ghpages_redirect', path + search + hash);
+      window.location.replace(base + '/');
+    </script>
+  </head>
+  <body></body>
+</html>
