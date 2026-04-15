@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://glanz-klar-service.de/sitemap.xml
